@@ -1,0 +1,96 @@
+.module-page {
+  padding: 10px 0 30px;
+}
+
+.module-header {
+  margin-bottom: 25px;
+}
+
+.module-header h1 {
+  margin: 0 0 8px;
+  color: var(--audex-text);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.module-header p {
+  margin: 0;
+  color: var(--audex-text-secondary);
+  font-size: 14px;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.settings-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: var(--audex-surface);
+  border: 1px solid var(--audex-border);
+  border-radius: 12px;
+}
+
+.settings-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  background: var(--audex-blue-bg);
+  color: var(--audex-blue);
+
+  font-size: 18px;
+}
+
+.settings-content {
+  flex: 1;
+}
+
+.settings-content h2 {
+  margin: 0 0 6px;
+  color: var(--audex-text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.settings-content p {
+  margin: 0;
+  color: var(--audex-text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.status-badge {
+  padding: 6px 11px;
+  border-radius: 20px;
+
+  background: #ecfdf3;
+  color: var(--audex-success);
+
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .settings-card {
+    align-items: flex-start;
+  }
+
+  .status-badge {
+    margin-left: auto;
+  }
+
+  .settings-content p {
+    font-size: 12px;
+  }
+}

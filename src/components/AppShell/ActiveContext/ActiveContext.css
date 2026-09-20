@@ -1,0 +1,27 @@
+.active-context {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  padding: 14px 30px;
+
+  background-color: var(--audex-surface);
+  border-bottom: 1px solid var(--audex-border);
+}
+
+.active-context div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.active-context span {
+  font-size: 10px;
+  color: var(--audex-text-faint);
+  text-transform: uppercase;
+}
+
+.active-context strong {
+  font-size: 12px;
+  color: var(--audex-text);
+}

@@ -1,0 +1,76 @@
+aside {
+  width: 248px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #e6e9f0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+
+/* ---------- Logo section ---------- */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 16px 8px;
+  border-bottom: 1px solid #e6e9f0;
+}
+
+.logo img {
+  width: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.logo p {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: #98a2b3;
+  margin: 0;
+}
+
+/* ---------- Nav ---------- */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 10px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #101828;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-link i {
+  width: 18px;
+  text-align: center;
+  font-size: 15px;
+  color: #667085;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  background-color: #f7f8fb;
+}
+
+
+.nav-link.active {
+  background-color: #2f5df5;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nav-link.active i {
+  color: #ffffff;
+   background-color: #2f5df5;
+}

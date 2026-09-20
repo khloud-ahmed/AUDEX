@@ -1,0 +1,22 @@
+:root {
+  --audex-blue: #2f5df5;
+  --audex-blue-bg: #eef4ff;
+  --audex-text: #101828;
+  --audex-text-secondary: #667085;
+  --audex-text-faint: #98a2b3;
+  --audex-border: #e6e9f0;
+  --audex-surface: #ffffff;
+  --audex-surface-muted: #f8f9fc;
+  --audex-success: #12b76a;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--audex-surface-muted);
+}
+
+.app-content {
+  flex: 1;
+  min-width: 0;
+}
