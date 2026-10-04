@@ -63,7 +63,12 @@ function Sidebar() {
             <i className={item.icon}></i>
             <span>{item.label}</span>
           </NavLink>
+          
         ))}
+        <NavLink to="/scenario-settings" className="nav-link">
+  <i className="fa-solid fa-sliders"></i>
+  <span>Scenario Settings</span>
+</NavLink>
       </nav>
     </aside>
   );

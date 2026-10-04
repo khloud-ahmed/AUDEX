@@ -8,7 +8,7 @@ import Settings from "../components/pages/Settings/Settings";
 
 import ProtectedRoute from "../authorization/ProtectedRoute";
 import { MODULES } from "../authorization/Permissions";
-
+import ScenarioSettingsForm from "../components/Forms/ScenarioSettingsForm/ScenarioSettingsForm";
 function AppRoutes() {
   return (
        <Routes>
@@ -66,6 +66,14 @@ function AppRoutes() {
           </ProtectedRoute>
         }
       />
+      <Route
+  path="/scenario-settings"
+  element={
+    <ProtectedRoute module={MODULES.SETTINGS}>
+      <ScenarioSettingsForm />
+    </ProtectedRoute>
+  }
+/>
     </Routes>
   );
 }
